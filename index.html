@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarah Gerth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-name">Sarah Gerth</span>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Work</a></li>
+        <li><a href="writing.html" class="nav-link">Writing</a></li>
+        <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="#" class="nav-link">CV ↗</a>
+          <!-- TODO: Replace href="#" with the actual link to your PDF CV on the Shapes of Knowledge site -->
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <!-- LEFT: image panel -->
+      <div class="hero-image">
+        <!-- TODO: Replace this placeholder with a real photo.
+             Ideal: a photo from a site visit, installation, gallery opening, or field trip.
+             NOT a headshot. Think SOUNDWALK walk, Walls-Ortiz installation, Socrates Sculpture Park,
+             or the Creative Community Care exhibition. Use object-fit: cover; object-position: center.
+             Add: <img src="images/hero.jpg" alt="Sarah Gerth at [location]" /> -->
+        <div class="hero-image-placeholder" aria-hidden="true"></div>
+      </div>
+
+      <!-- RIGHT: text panel -->
+      <div class="hero-text">
+        <p class="hero-tagline">Designing experiences that change how people know.</p>
+        <p class="hero-bio">
+          Sarah Gerth is an educator, curator, and <strong>knowledge designer</strong> working at the
+          intersection of art, place, and learning in New York City. She builds programs, exhibitions,
+          and curricula — almost always in collaboration — that take seriously the idea that
+          <strong>the city itself is a site of inquiry.</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- WORK SECTION -->
+    <section class="section-work">
+      <div class="section-header">
+        <span class="section-label">Work</span>
+        <!-- FILTER PILLS -->
+        <div class="filter-pills" role="group" aria-label="Filter projects">
+          <button class="pill pill-all active" data-filter="all">All</button>
+          <button class="pill pill-writing" data-filter="writing">Writing</button>
+          <button class="pill pill-teaching" data-filter="teaching">Teaching</button>
+          <button class="pill pill-making" data-filter="making">Making</button>
+        </div>
+      </div>
+
+      <!-- PROJECT GRID -->
+      <div class="project-grid" id="project-grid">
+
+        <!-- 1. Sense-able Curriculum -->
+        <article class="card" data-tags="writing teaching">
+          <div class="card-inner">
+            <p class="card-context">Dissertation · Journal of Curriculum Theorizing</p>
+            <h2 class="card-title">Sense-able Curriculum</h2>
+            <p class="card-desc">A study of Ellen Reid's SOUNDWALK in Central Park — place, affect, and what it means to encounter knowledge through the body rather than the page.</p>
+            <div class="card-tags">
+              <span class="tag tag-writing">Writing</span>
+              <span class="tag tag-teaching">Teaching</span>
+            </div>
+            <button class="card-toggle" aria-expanded="false">Read the story ↓</button>
+            <div class="card-story" hidden>
+              <p>In November 2020, I led a group of educators on an asynchronous walk through Central Park — listening to Ellen Reid's SOUNDWALK, a site-specific opera layered over the landscape. What happened surprised me. Teachers who had never thought about curriculum as sensory or spatial started asking different questions: What does it mean to learn in a place? Who decides what counts as knowledge? What does a body already know?</p>
+              <p>That walk became a dissertation, and the dissertation became an article in the <em>Journal of Curriculum Theorizing</em>. The core argument: curriculum can be artful, embodied, and place-based — and this isn't a soft alternative to rigor, it's a different theory of what rigor means.</p>
+              <p class="card-collaborator">Solo work</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Creative Community Care -->
+        <article class="card" data-tags="making teaching">
+          <div class="card-inner">
+            <p class="card-context">Walls-Ortiz Gallery · 6 cities</p>
+            <h2 class="card-title">Creative Community Care</h2>
+            <p class="card-desc">An artist residency grown into a traveling exhibition — with learning retreats at each of six North American stops.</p>
+            <div class="card-tags">
+              <span class="tag tag-making">Making</span>
+              <span class="tag tag-teaching">Teaching</span>
+            </div>
+            <button class="card-toggle" aria-expanded="false">Read the story ↓</button>
+            <div class="card-story" hidden>
+              <p>My co-curator and I have spent five years building something we didn't fully anticipate: a residency that became a roadshow, a roadshow that became a community, and a community that kept generating new art. Creative Community Care began as a residency program at Walls-Ortiz Gallery — a space committed to artists of color and faith-rooted practice. It grew into a traveling exhibition that has now visited six cities.</p>
+              <p>At each stop, we don't just hang the work. We build a learning retreat around it — a day of conversation, reflection, and making with local artists and educators. The exhibition is the occasion; the learning is the point.</p>
+              <p class="card-collaborator">With Marilyn Ostergren</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. ARTmobile -->
+        <article class="card" data-tags="making teaching">
+          <div class="card-inner">
+            <p class="card-context">Brooklyn Public Library</p>
+            <h2 class="card-title">ARTmobile</h2>
+            <p class="card-desc">A pop-up artist residency embedded in BPL Satellite Services — bringing free outdoor arts programming to Brooklyn neighborhoods.</p>
+            <div class="card-tags">
+              <span class="tag tag-making">Making</span>
+              <span class="tag tag-teaching">Teaching</span>
+            </div>
+            <button class="card-toggle" aria-expanded="false">Read the story ↓</button>
+            <div class="card-story" hidden>
+              <p>ARTmobile started as a grant application and became something harder to explain: a genuine institution within an institution, a mobile studio that found its way into parks, plazas, and sidewalks across Brooklyn. We embedded artists-in-residence within Brooklyn Public Library's Satellite Services — the branch-less arm of BPL that reaches communities without nearby libraries.</p>
+              <p>The model was simple: bring professional artists to where people already are, make the art free and unscheduled, let the neighborhood shape what gets made. Over three years, ARTmobile reached thousands of Brooklynites who had never set foot in an arts organization — and didn't need to.</p>
+              <!-- TODO: Fill in co-founder name before launch -->
+              <p class="card-collaborator">With [co-founder name — to fill in]</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Curriculum Encounters -->
+        <article class="card" data-tags="writing teaching">
+          <div class="card-inner">
+            <p class="card-context">Digital Futures Institute · Seasons 1–3</p>
+            <h2 class="card-title">Curriculum Encounters</h2>
+            <p class="card-desc">A podcast finding learning in the everyday spaces of New York City — grocery stores, ferry terminals, parks, and the places in between.</p>
+            <div class="card-tags">
+              <span class="tag tag-writing">Writing</span>
+              <span class="tag tag-teaching">Teaching</span>
+            </div>
+            <button class="card-toggle" aria-expanded="false">Read the story ↓</button>
+            <div class="card-story" hidden>
+              <p>My co-host Jackie Simmons and I take our listeners to a ferry terminal, a grocery store, a park — and ask: what is being taught here? Who is learning? What counts as curriculum when you leave the classroom behind?</p>
+              <p>Curriculum Encounters, produced through Teachers College's Digital Futures Institute across three seasons, is a podcast about learning in the wild. Each episode is a field trip and a conversation — rooted in a specific New York City place, asking big questions about knowledge, community, and what it means to teach.</p>
+              <p class="card-collaborator">With Dr. Jackie Simmons</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Shapes of Knowledge -->
+        <article class="card" data-tags="making writing">
+          <div class="card-inner">
+            <p class="card-context">Studio · Co-founded with Raquel Vigil</p>
+            <h2 class="card-title">Shapes of Knowledge</h2>
+            <p class="card-desc">A studio for creative engagements with knowledge — workshops, installations, card decks, and a writing series that takes seriously how form shapes understanding.</p>
+            <div class="card-tags">
+              <span class="tag tag-making">Making</span>
+              <span class="tag tag-writing">Writing</span>
+            </div>
+            <button class="card-toggle" aria-expanded="false">Read the story ↓</button>
+            <div class="card-story" hidden>
+              <p>Raquel Vigil and I founded Shapes of Knowledge because we kept asking the same question: what if knowledge had a different shape? Not the essay, not the lecture, not the slide deck — what if knowing could take the form of a card, a walk, a room, a meal?</p>
+              <p>Shapes of Knowledge is our studio for that question. We design workshops and installations, develop curriculum tools, publish a Substack series called <em>Knowledge Design in the World</em>, and consult with institutions that want to think differently about how they share what they know. The studio is a practice and an argument at the same time.</p>
+              <p class="card-collaborator">With Raquel Vigil</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Bodies of Prayer -->
+        <article class="card" data-tags="teaching making">
+          <div class="card-inner">
+            <p class="card-context">City Seminary of New York</p>
+            <h2 class="card-title">Bodies of Prayer</h2>
+            <p class="card-desc">A graduate course culminating in a student-curated public exhibition of objects, photographs, and sounds — reframing prayer as embodied, material practice.</p>
+            <div class="card-tags">
+              <span class="tag tag-teaching">Teaching</span>
+              <span class="tag tag-making">Making</span>
+            </div>
+            <button class="card-toggle" aria-expanded="false">Read the story ↓</button>
+            <div class="card-story" hidden>
+              <p>Two members of my faculty team came to me with a proposal: what if students' final project wasn't a paper but a public exhibition? We designed the course together — a graduate seminar on prayer as embodied practice, drawing on theology, art history, and material culture. Students didn't just read about prayer; they gathered objects, photographed practices, collected sounds, and curated an exhibition.</p>
+              <p>The result was a public show that opened the interior lives of a cohort of seminary students to a New York City audience — carefully, on their own terms. The exhibition asked visitors to slow down, look closely, and consider what bodies know that minds sometimes miss.</p>
+              <!-- TODO: Sarah should decide whether to publish this publicly — it involves student work -->
+              <p class="card-collaborator">With CSNY faculty team</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Curriculum of Neighborhood Spaces -->
+        <article class="card" data-tags="teaching writing">
+          <div class="card-inner">
+            <p class="card-context">Columbia Teachers College</p>
+            <h2 class="card-title">Curriculum of Neighborhood Spaces</h2>
+            <p class="card-desc">A course designed with Dr. Jackie Simmons — taking teacher education students into the city as their primary text.</p>
+            <div class="card-tags">
+              <span class="tag tag-teaching">Teaching</span>
+              <span class="tag tag-writing">Writing</span>
+            </div>
+            <button class="card-toggle" aria-expanded="false">Read the story ↓</button>
+            <div class="card-story" hidden>
+              <p>I designed this course at Teachers College with one conviction: that a neighborhood is a text, and learning to read it is as rigorous as learning to read any other. Alongside Dr. Jackie Simmons, I brought teacher education students out of the seminar room and into New York City — to laundromats, bodegas, community gardens, and transit hubs.</p>
+              <p>The question we kept returning to: if you were designing curriculum from this place, with these people, what would it look like? Students graduated with a more expansive idea of where learning happens and who gets to lead it.</p>
+              <p class="card-collaborator">With Dr. Jackie Simmons</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Teaching Institute -->
+        <article class="card" data-tags="teaching making">
+          <div class="card-inner">
+            <p class="card-context">City Seminary of New York</p>
+            <h2 class="card-title">Teaching Institute</h2>
+            <p class="card-desc">Faculty development and a public Teaching Certificate — training educators in embodied, place- and arts-based pedagogy rooted in the New York City context.</p>
+            <div class="card-tags">
+              <span class="tag tag-teaching">Teaching</span>
+              <span class="tag tag-making">Making</span>
+            </div>
+            <button class="card-toggle" aria-expanded="false">Read the story ↓</button>
+            <div class="card-story" hidden>
+              <p>The Teaching Institute translates two decades of City Seminary's experience into public programs for educators beyond CSNY's own community. We offer a Teaching Certificate and ongoing faculty development — grounded in the conviction that great teaching is embodied, place-attentive, and artful.</p>
+              <p>Participants come from schools, churches, nonprofits, and community organizations. They leave with tools, frameworks, and a cohort of fellow educators who take pedagogy seriously. The institute is an argument, made concrete: teaching is a practice that deserves as much study and craft as any other.</p>
+              <p class="card-collaborator">With CSNY faculty</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Mosaics for Welcome -->
+        <article class="card" data-tags="making writing">
+          <div class="card-inner">
+            <p class="card-context">Global Refuge · Board Commission</p>
+            <h2 class="card-title">Mosaics for Welcome</h2>
+            <p class="card-desc">A commissioned art-making session for a national board — objects to be permanently installed in the Baltimore headquarters of a major refugee resettlement organization.</p>
+            <div class="card-tags">
+              <span class="tag tag-making">Making</span>
+              <span class="tag tag-writing">Writing</span>
+            </div>
+            <button class="card-toggle" aria-expanded="false">Read the story ↓</button>
+            <div class="card-story" hidden>
+              <p>At our last Global Refuge board meeting, I commissioned a Baltimore-based artist to lead us in making mosaics together — board members, staff, and leadership, hands in grout and glass, making something that would outlast the meeting. The objects will be permanently installed at Global Refuge's Baltimore headquarters.</p>
+              <p>It was a deliberate choice: to mark the work of a national refugee resettlement organization not with a plaque or a report, but with something made by hand, in community. Art as institutional memory. Making as a form of witness.</p>
+              <!-- TODO: Confirm Baltimore artist's name before launch -->
+              <p class="card-collaborator">With Baltimore-based artist [name to confirm]</p>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /project-grid -->
+    </section>
+
+    <!-- SELECTED WRITING (homepage preview) -->
+    <section class="section-writing">
+      <div class="section-header">
+        <span class="section-label">Selected Writing</span>
+        <a href="writing.html" class="section-link">All writing →</a>
+      </div>
+      <div class="writing-list">
+        <div class="writing-item">
+          <div class="writing-main">
+            <span class="writing-title">Sense-able Curriculum: Artful Practices for Curriculum Theory and Design</span>
+            <span class="writing-year">2022</span>
+          </div>
+          <span class="writing-venue">Doctoral dissertation · Teachers College, Columbia University</span>
+        </div>
+        <div class="writing-item">
+          <div class="writing-main">
+            <span class="writing-title">Sense-able Curriculum</span>
+            <span class="writing-year">2023</span>
+          </div>
+          <span class="writing-venue">Journal of Curriculum Theorizing</span>
+        </div>
+        <div class="writing-item">
+          <div class="writing-main">
+            <span class="writing-title">Knowledge Design in the World</span>
+            <span class="writing-year">Ongoing</span>
+          </div>
+          <span class="writing-venue">Substack series · Shapes of Knowledge</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Sarah Gerth · New York City · <a href="mailto:sarah@example.com">sarah@example.com</a>
+      <!-- TODO: Replace with real email address -->
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
