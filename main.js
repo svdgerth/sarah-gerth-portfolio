@@ -1,9 +1,19 @@
 /* =============================================
    SARAH GERTH — PORTFOLIO SITE
-   Interactions: filter pills, card expand/collapse, mobile nav
+   Interactions: filter pills, card expand/collapse, mobile nav, nav scroll shadow
    ============================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
+
+  // --- NAV SCROLL SHADOW ---
+  // Adds a faint shadow/border when the user scrolls past the top
+  const siteNav = document.getElementById('site-nav');
+  if (siteNav) {
+    const onScroll = () => {
+      siteNav.classList.toggle('nav-scrolled', window.scrollY > 8);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
 
   // --- MOBILE NAV TOGGLE ---
   const navToggle = document.querySelector('.nav-toggle');

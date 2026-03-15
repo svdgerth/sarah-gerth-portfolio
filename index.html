@@ -6,13 +6,13 @@
   <title>Sarah Gerth</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- NAV -->
-  <nav class="nav">
+  <nav class="nav" id="site-nav">
     <div class="nav-inner">
       <span class="nav-name">Sarah Gerth</span>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -34,32 +34,48 @@
 
     <!-- HERO -->
     <section class="hero">
-      <!-- LEFT: image panel -->
-      <div class="hero-image">
-        <!-- TODO: Replace this placeholder with a real photo.
-             Ideal: a photo from a site visit, installation, gallery opening, or field trip.
-             NOT a headshot. Think SOUNDWALK walk, Walls-Ortiz installation, Socrates Sculpture Park,
-             or the Creative Community Care exhibition. Use object-fit: cover; object-position: center.
-             Add: <img src="images/hero.jpg" alt="Sarah Gerth at [location]" /> -->
-        <div class="hero-image-placeholder" aria-hidden="true"></div>
-      </div>
 
-      <!-- RIGHT: text panel -->
-      <div class="hero-text">
-        <p class="hero-tagline">Designing experiences that change how people know.</p>
-        <p class="hero-bio">
-          Sarah Gerth is an educator, curator, and <strong>knowledge designer</strong> working at the
-          intersection of art, place, and learning in New York City. She builds programs, exhibitions,
-          and curricula — almost always in collaboration — that take seriously the idea that
-          <strong>the city itself is a site of inquiry.</strong>
-        </p>
+      <!-- Display name — the editorial statement -->
+      <h1 class="hero-name">Sarah Gerth</h1>
+
+      <!-- Thin dividing rule -->
+      <hr class="hero-rule" />
+
+      <!-- Two-column body: tagline+bio left, image right -->
+      <div class="hero-body">
+
+        <!-- LEFT: tagline and bio -->
+        <div class="hero-text">
+          <p class="hero-tagline">Designing experiences that change how people know.</p>
+          <p class="hero-bio">
+            Sarah Gerth is an educator, curator, and <strong>knowledge designer</strong> working at the
+            intersection of art, place, and learning in New York City. She builds programs, exhibitions,
+            and curricula — almost always in collaboration — that take seriously the idea that
+            <strong>the city itself is a site of inquiry.</strong>
+          </p>
+        </div>
+
+        <!-- RIGHT: image -->
+        <div class="hero-image">
+          <!-- TODO: Replace this placeholder with a real photo.
+               Ideal: a photo from a site visit, installation, gallery opening, or field trip.
+               NOT a headshot. Think SOUNDWALK walk, Walls-Ortiz installation, Socrates Sculpture Park,
+               or the Creative Community Care exhibition. Use object-fit: cover; object-position: center.
+               Add: <img src="images/hero.jpg" alt="Sarah Gerth at [location]" /> -->
+          <div class="hero-image-placeholder" aria-hidden="true"></div>
+        </div>
+
       </div>
     </section>
 
     <!-- WORK SECTION -->
     <section class="section-work">
       <div class="section-header">
-        <span class="section-label">Work</span>
+        <!-- Chapter-marker label with rule -->
+        <div class="section-rule-wrap">
+          <span class="section-label">Work</span>
+          <hr class="section-rule" />
+        </div>
         <!-- FILTER PILLS -->
         <div class="filter-pills" role="group" aria-label="Filter projects">
           <button class="pill pill-all active" data-filter="all">All</button>
@@ -252,7 +268,10 @@
     <!-- SELECTED WRITING (homepage preview) -->
     <section class="section-writing">
       <div class="section-header">
-        <span class="section-label">Selected Writing</span>
+        <div class="section-rule-wrap">
+          <span class="section-label">Selected Writing</span>
+          <hr class="section-rule" />
+        </div>
         <a href="writing.html" class="section-link">All writing →</a>
       </div>
       <div class="writing-list">
